@@ -1,0 +1,19 @@
+{
+  "name": "@simple-helpers/validations",
+  "version": "1.0.0",
+  "description": "Higher order validation functions for boolean algebraic operatons",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "vitest"
+  },
+  "author": "josensanchez",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.0.2",
+    "vitest": "^0.29.7"
+  }
+}
