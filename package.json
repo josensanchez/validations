@@ -1,6 +1,6 @@
 {
   "name": "@simple-helpers/validations",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Higher order validation functions for boolean algebraic operatons",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
