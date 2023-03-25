@@ -9,10 +9,10 @@ export const isNumber = (value:unknown) => {
     if (Array.isArray(value)) {
       return false;
     }
-    return typeof value === "number" || !isNaN(value);
+    return typeof value === "number" || !isNaN(value as any);
 }
 
-export const isString = (value:unknown) => {
+export const isString = (value:unknown): value is string => {
     if (Array.isArray(value)) {
       return false;
     }
@@ -51,7 +51,7 @@ export const len = (length: number) => (value:unknown) => {
     return false;
 }
 
-export const match = (pattern: string) => (value:unknown) => {
+export const match = (pattern: string) => (value:string) => {
   const re = new RegExp(pattern);
   return re.test(value);
 }
